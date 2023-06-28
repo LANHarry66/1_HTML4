@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>常用控件</title>
+</head>
+<body>
+    <form action="https://search.jd.com/search" target="_blank">
+        <fieldset>
+            <legend>
+                主要信息
+            </legend>
+             <!-- 文本输入 -->
+            <label for="1">账户：</label>
+            <input id="1" type="text" name="account" value="LHR" maxlength="10">
+            <br>
+            <!-- 密码输入框 -->
+            <label for="2">密码：</label>
+            <input id="2" type="password" name="psw" maxlength="6"> 
+            <br>
+            <!-- 单选框 -->
+            性别：
+                <input id="3" type="radio" name="gender" value="male" checked><label for="3">男</label>
+                <input id="4" type="radio" name="gender" value="female"><label for="4">女</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>次要信息</legend>
+            <!-- 复选框 -->
+            爱好：
+            <label>
+                <input type="checkbox" name="hobby" value="smoke">抽烟
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="drink">喝酒
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="hair">烫头
+            </label>
+            <br>
+            <!-- 隐藏域 -->
+            <input type="hidden" name="yincang" value="gg">
+            <br>
+            <label>
+                其他：<textarea name="other" cols="20" rows="5"></textarea>
+            </label>
+            <br>
+            籍贯：
+            <select name="place">
+                <option value="cd" selected>成都</option>
+                <option value="cq">重庆</option>
+            </select>
+        </fieldset>
+        <br>
+       <input type="submit">
+       
+       <input type="reset">
+      
+       <input type="button" value="检测是否注册">
+    </form>
+    
+</body>
+</html>
+<!-- lable的for 和 id关联 
+    也可以把整个放在lable标签里面，这样就不需要for和id绑定了-->

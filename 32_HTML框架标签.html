@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>框架标签</title>
+</head>
+<body>
+    <!-- 利用iframe嵌入网页,用来实现嵌入广告 -->
+    <iframe src="https://www.4399.com" frameborder="0"></iframe>
+    <iframe width="1200" height="500" src="./Explosion_4k.jpg" frameborder="0"></iframe>
+    <br>
+    <!-- iframe 的 name属性与超链接a标签target配合 -->
+    <a href="https://www.4399.com" target="4399">4399</a>
+    <br>
+    <iframe width="400" height="400" name="4399" frameborder="0"></iframe>
+    
+    <!-- iframe的name属性与表单target属性配合 -->
+    <iframe width="400" height="400" name="test" frameborder="0"></iframe>
+    <form action="https://www.4399.com" target="test">
+        <input type="submit">
+    </form>
+
+</body>
+</html>

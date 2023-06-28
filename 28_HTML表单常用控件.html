@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>常用控件</title>
+</head>
+<body>
+    <!-- <form action="https://search.jd.com/search">
+        <input type="text" name="keyword">
+        <button>
+            搜索
+        </button>
+    </form>
+    <hr> -->
+
+    <form action="https://search.jd.com/search" target="_blank">
+        <!-- 文本输入 -->
+        账户：<input type="text" name="account" maxlength="10">
+        <br>
+        <!-- 密码输入框 -->
+        密码：<input type="password" name="psw" maxlength="6"> 
+        <br>
+        <!-- 单选框 -->
+        性别：<input type="radio" name="gender" value="male" checked>男
+            <input type="radio" name="gender" value="female">女
+        <br>
+        <!-- 复选框 -->
+        爱好：
+        <input type="checkbox" name="hobby" value="smoke">抽烟
+        <input type="checkbox" name="hobby" value="drink">喝酒
+        <input type="checkbox" name="hobby" value="hair">烫头
+        <br>
+        <!-- 隐藏域 -->
+        <input type="hidden" name="yincang" value="gg">
+        <br>
+        其他：<textarea name="other" cols="20" rows="5"></textarea>
+        <br>
+        籍贯：
+        <select name="place">
+            <option value="cd" selected>成都</option>
+            <option value="cq">重庆</option>
+        </select>
+        <br>
+        <!-- 第一种确认方法 -->
+       <button>确认</button>
+       <!-- 第二章确认方法 -->
+       <input type="submit" >
+       <!-- 重置第一种写法 -->
+       <button type="reset">重置</button>
+       <!-- 重置第二种写法 -->
+       <input type="reset">
+       <!-- 普通按钮第一种方式 -->
+       <button type="button">检测是否注册</button> <!--type=button就是普通按钮，不会有反应-->
+       <!-- 普通按钮第二种方式 -->
+       <input type="button" value="检测是否注册">
+    </form>
+    
+</body>
+</html>
+<!-- 普通输入框可以不带value，但是复选框 单选框 必须有value，这样url上才会显示你选的结果。
+    除了type=submit，其他输入框必须要有name，不然搜索不到框的内容 -->
